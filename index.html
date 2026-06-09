@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="title"
+      content="This is a webpage for a software development firm"
+    />
+    <meta
+      name="description"
+      content="This page showcase our company history values and services"
+    />
+    <meta property="og:title" content="Vonnue Innovation" />
+    <meta
+      property="og:description"
+      content="    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet error recusandae aperiam, deserunt voluptates neque? Deleniti, cum accusamus dicta sapiente dolore obcaecati consectetur asperiores atque voluptates optio a reiciendis expedita?"
+    />
+    <meta
+      property="og:image"
+      content="./image/nastuh-abootalebi-yWwob8kwOCk-unsplash"
+    />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:type" content="website" />
+    <title>Index</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      background: black;
+      background-image: url(./images/nastuh-abootalebi-yWwob8kwOCk-unsplash.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      margin: 0;
+    }
+    .navbar a {
+      padding: 8px;
+      font-size: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      color: aliceblue;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      margin-right: 160px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      height: 4rem;
+      z-index: 1;
+      top: 0;
+      width: 100vw;
+      padding: 20px;
+      backdrop-filter: blur(16px);
+    }
+    .main {
+      flex: 1;
+      position: relative;
+      color: aliceblue;
+      margin-top: 8rem;
+      align-items: center;
+    }
+    .caption {
+      display: flex;
+      justify-content: center;
+      margin-top: 10rem;
+    }
+    .caption h1 {
+      font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+      font-weight: bold;
+      font-size: 150px;
+    }
+    .add {
+      color: aliceblue;
+      font-size: 16px;
+      font-family:
+        "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    .footer h3 {
+      color: aliceblue;
+      font-weight: bold;
+    }
+    .tags {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .tagline {
+      color: white;
+      font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+      font-size: 25px;
+      padding: 20px;
+      font-weight: bold;
+      width: 280px;
+      display: flex;
+      text-align: center;
+    }
+    .button {
+      background-color: transparent;
+      border-radius: 25px;
+      border: 2px;
+      width: 400px;
+      height: 5rem;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      text-align: center;
+    }
+    .button :hover {
+      transform: translateY(-4px);
+      background-color: transparent;
+    }
+    .text {
+      font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+      font-weight: bold;
+      font-size: 25px;
+      color: aliceblue;
+      text-align: center;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+      padding: 3rem;
+    }
+    .buttons1 {
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+    }
+    .info {
+      display: flex;
+      justify-content: center;
+      width: 50vw;
+      height: 50vh;
+      font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+      font-weight: bold;
+      font-size: 40px;
+      text-align: center;
+    }
+    .information {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 300px;
+      margin-left: 750px;
+      width: 100vw;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <div
+        class="logoFullwhite"
+        style="display: flex; width: 145px; height: 80px"
+      >
+        <img
+          src="https://vonnue.com/_next/static/media/logoFullwhite.706f8357.svg"
+          alt="logo"
+        />
+      </div>
+      <div class="navbar">
+        <nav><a href="./index.html">Home</a></nav>
+        <nav><a href="./about.html">About</a></nav>
+        <nav><a href="./services.html">Service</a></nav>
+        <nav><a href="./team.html">Team</a></nav>
+        <nav><a href="./contact.html">Contact</a></nav>
+      </div>
+    </header>
+    <main class="main">
+      <section>
+        <div class="caption">
+          <h1>Empowering Digital Journeys for Startups and Enterprises</h1>
+        </div>
+        <div class="tags">
+          <div class="tagline">Full Service, Full Stack Software Agency</div>
+          <div class="tagline">100+ Certified & Experienced Developers</div>
+          <div class="tagline">Flexible Plans To Meet Your Needs</div>
+        </div>
+        <div class="buttons">
+          <button class="button">
+            <span class="text">Get a Tilored Response -></span>
+          </button>
+          <button class="button">
+            <span class="text">Reachout to us -></span>
+          </button>
+        </div>
+      </section>
+      <section class="information">
+        <article class="info">
+          <p>
+            Partnering with visionary startups and leading enterprises we
+            harness our full-cycle digital expertise to shape brands, design
+            experiences, and build products that drive growth and transformation
+            — impacting millions, every day.
+          </p>
+        </article>
+        <div class="buttons1">
+          <button class="button">
+            <span class="text">Let's Collaborate -></span>
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer class="footer">
+    <section>
+      <h3>Contact</h3>
+      <address>
+        <span class="add">
+          2nd Floor Key Tee Tower,<br />
+          Sultan Bathery, Kerala, India-673592
+        </span>
+      </address>
+      <br />
+      <br />
+      <address>
+        <span class="add">
+          Singapore, 160 Robinson Road, #14-04 <br />
+          Singapore, Business Federation Centre,<br />
+          Singapore 068914
+          <br />
+          <p>Phone : +91 4753698927</p>
+        </span>
+      </address>
+    </section>
+  </footer>
+</html>
