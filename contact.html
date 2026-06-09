@@ -34,6 +34,11 @@
         padding: 20px;
         backdrop-filter: blur(16px);
       }
+      main {
+        flex: 1;
+        position: relative;
+        margin-top: 16rem;
+      }
       .add {
         color: aliceblue;
         font-size: 16px;
@@ -45,10 +50,9 @@
         color: aliceblue;
         font-weight: bold;
       }
-      .footer {
-        display: flex;
-        padding: 20px;
-        bottom: 0;
+      .footer h3 {
+        color: aliceblue;
+        font-weight: bold;
       }
     </style>
     <header class="header">
@@ -69,8 +73,10 @@
         <nav><a href="./contact.html">Contact</a></nav>
       </div>
     </header>
+    <main></main>
   </body>
   <footer class="footer">
+    <hr />
     <section>
       <h3>Contact</h3>
       <address>
@@ -79,11 +85,15 @@
           Sultan Bathery, Kerala, India-673592
         </span>
       </address>
+      <br />
+      <br />
       <address>
         <span class="add">
           Singapore, 160 Robinson Road, #14-04 <br />
           Singapore, Business Federation Centre,<br />
           Singapore 068914
+          <br />
+          <p>Phone : +91 4753698927</p>
         </span>
       </address>
     </section>
