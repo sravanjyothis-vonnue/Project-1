@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Contact information of the firm" />
+    <meta
+      name="description"
+      content="Provide all the required information about you so that we can contact you back"
+    />
+    <title>Contact</title>
+  </head>
+  <body style="background: black">
+    <style>
+      .body {
+        padding: 20px;
+      }
+      .navbar a {
+        padding: 8px;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: aliceblue;
+      }
+      .navbar {
+        display: flex;
+        flex-direction: row;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        height: 4rem;
+        z-index: 1;
+        top: 0;
+        width: 95vw;
+        padding: 20px;
+        backdrop-filter: blur(16px);
+      }
+      main {
+        flex: 1;
+        position: relative;
+        margin-top: 16rem;
+      }
+      .address {
+        color: aliceblue;
+        font-size: 16px;
+        font-family:
+          "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .h3 {
+        color: aliceblue;
+        font-weight: bold;
+      }
+      .footer h3 {
+        color: aliceblue;
+        font-weight: bold;
+      }
+      main h1 {
+        text-align: left;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          "Open Sans",
+          "Helvetica Neue",
+          sans-serif;
+        font-weight: bolder;
+        font-size: 120px;
+        color: aliceblue;
+      }
+      .heading {
+        width: 80vw;
+        margin-left: 10rem;
+        display: flex;
+        color: aliceblue;
+      }
+      .tagline {
+        display: flex;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          "Open Sans",
+          "Helvetica Neue",
+          sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        width: 50vw;
+      }
+      .heading p {
+        margin-top: auto;
+        margin-right: auto;
+        text-align: right;
+      }
+      main form {
+        padding: 20px;
+        text-align: center;
+      }
+      main form label {
+        color: aliceblue;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          "Open Sans",
+          "Helvetica Neue",
+          sans-serif;
+        font-size: 20px;
+        padding-left: 30px;
+        padding-bottom: 40px;
+      }
+      main form input {
+        border: none;
+        border-bottom: 3px solid #cccc;
+        background: transparent;
+        padding: 10px 0px 5px 40px;
+        height: 20px;
+        width: 700px;
+        padding-bottom: 40px;
+      }
+      main form button {
+        background-color: transparent;
+        border-radius: 25px;
+        border: 3px solid;
+        width: 400px;
+        height: 5rem;
+        text-align: center;
+        padding: 15px;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          "Open Sans",
+          "Helvetica Neue",
+          sans-serif;
+        font-weight: bold;
+        font-size: 26px;
+        text-align: center;
+        color: aliceblue;
+      }
+      main iframe {
+        margin-left: 16rem;
+        width: 80vw;
+      }
+    </style>
+    <header class="header">
+      <div
+        class="logoFullwhite"
+        style="display: flex; width: 145px; height: 80px"
+      >
+        <img
+          src="https://vonnue.com/_next/static/media/logoFullwhite.706f8357.svg"
+          alt="logo"
+        />
+      </div>
+      <div class="navbar">
+        <nav>
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./services.html">Service</a>
+          <a href="./team.html">Team</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="heading">
+        <h1>Shaping Your <br />Vision into Reality</h1>
+        <p>
+          <span class="tagline"
+            >We collaborate, design, and build <br />
+            solutions tailored to your goals.</span
+          >
+        </p>
+      </div>
+      <hr />
+      <form action="/submit" method="POST">
+        <label for="firstName">First Name* </label>
+        <input type="text" id="firstName" required minlength="2" />
+        <label for="secondName">Second Name* </label>
+        <input type="text" id="secondName" required minlength="2" /><br /><br />
+        <label for="email">Email id*</label>
+        <input type="text" id="email" required minlength="5" />
+        <label for="department">Select department</label>
+        <input list="department" id="department" />
+        <datalist id="department">
+          <option value="finance">Finance</option>
+          <option value="security">Security</option>
+          <option value="backend">Backend</option>
+          <option value="frontend">Frontend</option>
+        </datalist>
+        <br /><br />
+        <label for="newsletter">Newsletter</label>
+        <input type="checkbox" id="newsletter" /><br /><br />
+        <button class="submit">Submit</button>
+      </form>
+      <iframe
+        src="https://share.google/ZxqP0EOYV1sDS7sGV"
+        frameborder="0"
+      ></iframe>
+    </main>
+  </body>
+  <footer class="footer">
+    <hr />
+    <section>
+      <h3>Contact</h3>
+      <address>
+        <span class="add">
+          2nd Floor Key Tee Tower,<br />
+          Sultan Bathery, Kerala, India-673592
+        </span>
+      </address>
+      <br />
+      <br />
+      <address>
+        <span class="address">
+          Singapore, 160 Robinson Road, #14-04 <br />
+          Singapore, Business Federation Centre,<br />
+          Singapore 068914
+          <br />
+          <p>Phone : +91 4753698927</p>
+        </span>
+      </address>
+    </section>
+  </footer>
+</html>

@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+  </head>
+  <body style="background: black">
+    <style>
+      .body {
+        padding: 20px;
+        margin-left: 40px;
+        height: 100vh;
+      }
+      .navbar a {
+        padding: 8px;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: aliceblue;
+      }
+      .navbar {
+        display: flex;
+        flex-direction: row;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        height: 4rem;
+        z-index: 1;
+        top: 0;
+        width: 95vw;
+        padding: 20px;
+        backdrop-filter: blur(16px);
+      }
+      .address {
+        color: aliceblue;
+        font-size: 16px;
+        font-family:
+          "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .h3 {
+        color: aliceblue;
+        font-weight: bold;
+      }
+      .Mission {
+        margin-left: 16rem;
+        color: aliceblue;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          "Open Sans",
+          "Helvetica Neue",
+          sans-serif;
+        font-weight: bold;
+        font-size: 35px;
+        width: 60vw;
+      }
+      .main {
+        flex: 1;
+        position: relative;
+        margin-top: 14rem;
+      }
+      .titlegreen {
+        color: darkgreen;
+      }
+      .footer h3 {
+        color: aliceblue;
+        font-weight: bold;
+      }
+      .history {
+        color: aliceblue;
+        padding: 20px;
+        width: 20vw;
+        display: flex;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Oxygen,
+          Ubuntu,
+          Cantarell,
+          "Open Sans",
+          "Helvetica Neue",
+          sans-serif;
+        font-size: 20px;
+        margin-left: 16rem;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        padding: 20px;
+      }
+      .historyTitle {
+        font-weight: bold;
+        font-size: 25px;
+        padding: 20px;
+      }
+      .history h1{
+        font-weight: bolder;
+        font-size: 50px;
+      }
+      .values{
+        color: aliceblue;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        width: 30vw;
+        text-align: justify;
+        margin-left: 16rem;
+      }
+      .values h1{
+        font-weight: bolder;
+        font-size: 50px;
+        color: aliceblue;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+      }
+      .values h2{
+        font-weight: bold;
+        font-size: 25px;
+      }
+    </style>
+    <header class="header">
+      <div
+        class="logoFullwhite"
+        style="display: flex; width: 145px; height: 80px"
+      >
+        <img
+          src="https://vonnue.com/_next/static/media/logoFullwhite.706f8357.svg"
+          alt="logo"
+        />
+      </div>
+      <div class="navbar">
+        <nav>
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./services.html">Service</a>
+          <a href="./team.html">Team</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="Mission">
+        <article>
+          <h1>
+            From <span class="titlegreen">‘Wayanad’an</span> Roots to Global
+            Impact
+          </h1>
+          <p>
+            <blockquote>We’re a tech-driven company founded on the principles of innovation,
+            sustainability, and community. Born in the serene hills of Wayanad,
+            we’ve grown from a small team into a global force, committed to
+            building impactful digital solutions for startups and enterprises
+            alike. With a strong focus on technology, ethical growth, and client
+            partnerships, Vonnue is breaking barriers while staying rooted in
+            our core values. At Vonnue, we believe in the power of
+            collaboration, continuous learning, and pushing the boundaries of
+            what’s possible. From our office in Wayanad to projects spanning the
+            globe, we’re driven by a shared mission: to create technology that
+            not only solves problems but also adds value to people’s lives and
+            businesses.</blockquote>
+          </p>
+        </article>
+        <img
+          src="https://vonnue.com/_next/image?url=%2Fimages%2Fabout-us-hero.png&w=1080&q=75"
+          alt="people collaborate"
+          height="500px"
+          width="1200px"
+        />
+      </section>
+
+      <section class="history">
+        <h1>Company History :</h1>
+        <dl>
+          <dt class="historyTitle">
+            <time datetime="2000">2000</time> -
+            <time datetime="2004">2004 The Beginning</time>
+          </dt>
+          <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            ipsum nemo iure ex laborum neque, dignissimos porro dolor pariatur
+            doloremque dolore repellendus est quo rem tenetur debitis explicabo
+            voluptatibus repellat! Praesentium, et? Velit libero nobis dolor
+            consequuntur. Amet, error eos?
+          </dd>
+
+          <dt class="historyTitle">
+            <time datetime="2004">2004</time> -
+            <time datetime="2014">2014 The Startup Phase</time>
+          </dt>
+          <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            ipsum nemo iure ex laborum neque, dignissimos porro dolor pariatur
+            doloremque dolore repellendus est quo rem tenetur debitis explicabo
+            voluptatibus repellat! Praesentium, et? Velit libero nobis dolor
+            consequuntur. Amet, error eos?
+          </dd>
+
+          <dt class="historyTitle">
+            <time datetime="2014">2014</time> -
+            <time datetime="2026">2026 The Bloom</time>
+          </dt>
+          <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            ipsum nemo iure ex laborum neque, dignissimos porro dolor pariatur
+            doloremque dolore repellendus est quo rem tenetur debitis explicabo
+            voluptatibus repellat! Praesentium, et? Velit libero nobis dolor
+            consequuntur. Amet, error eos?
+          </dd>
+        </dl>
+      </section>
+      <section class="values">
+        <h1>Our Values :</h1>
+        <article>
+            <h2>Challenge Conventional Thinking</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus maxime temporibus laudantium quia, explicabo unde cumque. Minus, qui. Ab explicabo delectus, aperiam porro similique sit modi maxime necessitatibus mollitia! Maiores quae excepturi facilis amet similique soluta atque vero ad odit.
+            </p>
+        </article>
+        
+        <article>
+        <h2>Embrace the Learning Journey</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ipsa unde assumenda nobis eligendi voluptas hic velit reprehenderit itaque, dicta vero maxime iste! Fugit ex dolore saepe cumque nemo quasi ducimus corrupti ipsam officiis necessitatibus! Ad labore aperiam illo in?</p>
+        </article>
+
+        <article>
+        <h2>Commitment to Excellence</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos ipsa unde assumenda nobis eligendi voluptas hic velit reprehenderit itaque, dicta vero maxime iste! Fugit ex dolore saepe cumque nemo quasi ducimus corrupti ipsam officiis necessitatibus! Ad labore aperiam illo in?</p>
+        </article>
+
+      </section>
+    </main>
+  </body>
+  <footer class="footer">
+    <hr />
+    <section>
+      <h3>Contact</h3>
+      <address>
+        <span class="add">
+          2nd Floor Key Tee Tower,<br />
+          Sultan Bathery, Kerala, India-673592
+        </span>
+      </address>
+      <br />
+      <br />
+      <address>
+        <span class="address">
+          Singapore, 160 Robinson Road, #14-04 <br />
+          Singapore, Business Federation Centre,<br />
+          Singapore 068914
+          <br />
+          <p>Phone : +91 4753698927</p>
+        </span>
+      </address>
+    </section>
+  </footer>
+</html>
